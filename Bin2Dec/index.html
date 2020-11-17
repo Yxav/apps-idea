@@ -4,28 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bin2Dec</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>Bin to Dec</h2>
-    <p id="value"></p>
-    <input id="binary" type="text" onchange="convert()" placeholder="Insert binary value"> 
-
-    <script>
-        function convert() {
-            const div = document.getElementById('value')
-            const binary = document.getElementById('binary').value
-            
-            if (binary === '' || binary === ' ') return alert('Please, insert a value')
-            binary.split('').map(bit=>{
-                if (bit !== '1' && bit !== '0') return alert('Please, only binary numbers')
-
-            })
-            const decimal = parseInt(binary, 2)
-
-            div.innerHTML = decimal            
-        }
+    <div class="container">
+        <h2 class="title-bin"> Bin to Dec</h2>
+        <p class="title-convert">Binary:</p>
+        <div class="input-field">
+            <input id="binary" type="text" onchange=""> 
+        </div>
+        
+        <p class="title-convert">Decimal:</p>
+            <p id="results"></p>
+    
+        <button onclick="convert()" class="btn convert">Convert</button>
+        </div>
 
 
-</script>
+    <script src="./app.js"></script>
 </body>
 </html>
