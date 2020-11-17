@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bin2Dec</title>
+</head>
+<body>
+    <h2>Bin to Dec</h2>
+    <p id="value"></p>
+    <input id="binary" type="text" onchange="convert()" placeholder="Insert binary value"> 
+
+    <script>
+        function convert() {
+            const div = document.getElementById('value')
+            const binary = document.getElementById('binary').value
+            
+            if (binary === '' || binary === ' ') return alert('Please, insert a value')
+            binary.split('').map(bit=>{
+                if (bit !== '1' && bit !== '0') return alert('Please, only binary numbers')
+
+            })
+            const decimal = parseInt(binary, 2)
+
+            div.innerHTML = decimal            
+        }
+
+
+</script>
+</body>
+</html>
