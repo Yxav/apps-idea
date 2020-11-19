@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Radius preview</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h2>Border Radius Preview</h2>
+    <div id="square" onclick="changeRadius()"></div>
+
+    <div class="inputs-controll">
+    <label for="top-left">Top-Left</label>
+    <input id="top-left" type="text">
+    
+    <label for="top-right">Top Right</label>
+    <input id="top-right" type="text">
+
+
+    <label for="bottom-left">Bottom-left</label>
+    <input id="bottom-left" type="text">
+
+    <label for="bottom-right">Bottom-Right</label>
+    <input id="bottom-right" type="text">
+
+    <button onclick="changeRadius()">Transform</button>
+    <button id="copy-text" onclick="copyText()">Copy Style</button>
+    <input type="text" id="boxCopy" hidden>
+
+
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
