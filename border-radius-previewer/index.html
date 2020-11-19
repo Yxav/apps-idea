@@ -11,26 +11,30 @@
     <div id="square" onclick="changeRadius()"></div>
 
     <div class="inputs-controll">
-    <label for="top-left">Top-Left</label>
-    <input id="top-left" type="text">
+        <div class="column">
+            <label for="top-left">Top-Left</label>
+            <input class="input-box" id="top-left" type="text">
+
+            <input class="input-box" id="top-right" type="text">
+            <label for="top-right">Top Right</label>
+        </div>
+
+        <div class="column">
+            <label for="bottom-left">Bottom-left</label>
+            <input class="input-box" id="bottom-left" type="text">
     
-    <label for="top-right">Top Right</label>
-    <input id="top-right" type="text">
-
-
-    <label for="bottom-left">Bottom-left</label>
-    <input id="bottom-left" type="text">
-
-    <label for="bottom-right">Bottom-Right</label>
-    <input id="bottom-right" type="text">
-
-    <button onclick="changeRadius()">Transform</button>
-    <button id="copy-text" onclick="copyText()">Copy Style</button>
-    <input type="text" id="boxCopy" hidden>
-
-
+            <input class="input-box" id="bottom-right" type="text">
+            <label for="bottom-right">Bottom-Right</label>
+        </div>
     </div>
+    <div class="buttons">
+        <button class="btn" onclick="changeRadius()">Transform</button>
+        <span class="copy-bg"><i class="far fa-copy btn-copy" onclick="copyText()"></i></span>
+    </div>
+
+        <script src="https://kit.fontawesome.com/3de522e777.js" crossorigin="anonymous"></script>
 
     <script src="./app.js"></script>
 </body>
 </html>
+

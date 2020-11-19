@@ -1,6 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 #square{
+    margin: 50px;
     border: 1px solid black;
     width: 100px;
     height: 100px;
     border-radius: 0;
+    background-color: aqua;
 } 
+
+h2 {
+    margin: 30px 50px;
+    color: #fff;
+    font-size: 36px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #5995fd;
+}
+
+.inputs-controll .column {
+    display: flex;
+    justify-content: center;
+    background-color: #f0f0f0;
+    margin: 10px 0;
+    border-radius: 55px;
+    
+}
+
+
+.inputs-controll .column  .input-box {
+    width: 20%;
+    margin: 10px 8px;
+    border-radius: 20px;
+    border-style: none;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.inputs-controll .column label {
+    margin: 10px;
+}
+
+
+
+.btn-copy{
+    margin: 30px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    
+}
+
+
+.btn {
+    width: 150px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: #0b60f2;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 10px 0;
+    transition: .5s;
+}
+
+.btn:hover{
+    background-color: #4d84e2;
+}
+
